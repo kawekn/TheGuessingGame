@@ -2,6 +2,7 @@ from random import randint
 
 
 def guessing_game():
+    """Generates a random number and checks user's guess."""
     secret_number = randint(1, 100)
     success = False
     while not success:
