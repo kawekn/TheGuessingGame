@@ -8,8 +8,7 @@ def guessing_game():
         ValueError: When user input isn't integer literal.
     """
     secret_number = randint(1, 100)
-    success = False
-    while not success:
+    while True:
 
         user_guess = input("Guess the number: ")
 
@@ -21,7 +20,7 @@ def guessing_game():
 
         if user_guess == secret_number:
             print("You win")
-            success = True
+            break
         elif user_guess > secret_number:
             print("To big!")
         else:
